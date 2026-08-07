@@ -14,8 +14,12 @@ response back, with support for both non-streaming and streaming output.
 | File | What it demonstrates |
 |------|----------------------|
 | [`copilotstudio_basic.py`](copilotstudio_basic.py) | The simplest path — create an agent from environment variables and get non-streaming **and** streaming responses. |
-| [`copilotstudio_chat.py`](copilotstudio_chat.py) | An interactive, streaming **chat REPL** in your terminal — the best thing to demo live. |
+| [`copilotstudio_chat.py`](copilotstudio_chat.py) | An interactive **chat REPL** in your terminal — the best thing to demo live. |
 | [`copilotstudio_explicit_settings.py`](copilotstudio_explicit_settings.py) | Production-style **explicit configuration** — manual token acquisition and custom `ConnectionSettings`. |
+| [`app.py`](app.py) | A polished **Streamlit web chat** with a live config sidebar, per-response latency, and an "API & backend call" panel showing exactly how the UI reaches the agent. |
+
+See [`ARCHITECTURE.md`](ARCHITECTURE.md) for the design, the auth model, and the
+end-to-end request flow.
 
 ## Architecture
 
@@ -80,20 +84,34 @@ Copy-Item .env.example .env
 
 ## Run the demos
 
+Activate the virtual environment first (`.\.venv\Scripts\Activate.ps1` on
+Windows PowerShell), then:
+
 ```powershell
 # Simplest: non-streaming + streaming
 python copilotstudio_basic.py
 
-# Interactive chat (great for a live demo)
+# Interactive chat in the terminal (great for a live demo)
 python copilotstudio_chat.py
 
 # Production-style explicit configuration
 python copilotstudio_explicit_settings.py
 ```
 
-The **first** time you run a demo, MSAL opens your browser for an interactive
-sign-in. The token is then cached to `token_cache.bin` so subsequent runs are
-non-interactive.
+### Web demo (Streamlit)
+
+```powershell
+python -m streamlit run app.py
+```
+
+This opens the chat UI at **http://localhost:8501**. Click an example prompt or
+type a question; expand the **"API & backend call"** panel to show the customer
+the exact Agent Framework call and the underlying Copilot Studio HTTP request.
+Stop the server with `Ctrl+C` in the terminal.
+
+The **first** message in any demo triggers an interactive Entra sign-in (a
+browser opens). The token is held in memory for the life of the process, so you
+sign in once per run.
 
 ## Troubleshooting
 
@@ -103,8 +121,9 @@ non-interactive.
 - **Environment / agent not found** — verify the Environment ID and Schema name,
   and make sure the agent is **published**.
 - **Interactive sign-in doesn't appear** — corporate proxies/firewalls can block
-  the flow; try again on an unrestricted network, or delete `token_cache.bin` to
-  force a fresh sign-in.
+  the flow; try again on an unrestricted network. Because the token is not
+  persisted to disk, each run performs a fresh sign-in (SSO usually makes this
+  instant after the first time).
 
 ## References
 
