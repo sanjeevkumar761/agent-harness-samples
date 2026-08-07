@@ -1,0 +1,35 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+.python-version
+
+# Local credentials & MSAL token caches — never commit these
+.env
+.env.*
+!.env.example
+token_cache.bin
+.local_token_cache.json
+*.pem
+*.key
+
+# Python caches / build artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log

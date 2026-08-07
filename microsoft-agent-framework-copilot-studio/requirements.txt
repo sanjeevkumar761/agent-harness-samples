@@ -1,0 +1,18 @@
+# Microsoft Agent Framework with the Copilot Studio provider.
+agent-framework-copilotstudio
+
+# Copilot Studio Direct-to-Engine client (pulled in by the provider above,
+# listed explicitly for clarity).
+microsoft-agents-copilotstudio-client
+
+# MSAL for interactive token acquisition (acquire_token).
+msal
+
+# Async HTTP transport used by the Copilot Studio client.
+aiohttp
+
+# Web UI for the "wow" demo (app.py).
+streamlit
+
+# Loads connection settings from a local .env file.
+python-dotenv
