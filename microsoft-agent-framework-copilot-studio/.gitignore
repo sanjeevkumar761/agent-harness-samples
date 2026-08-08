@@ -27,6 +27,12 @@ dist/
 # Streamlit
 .streamlit/secrets.toml
 
+# Video files (keep large media out of the repo)
+*.mp4
+*.mov
+*.m4v
+*.webm
+
 # Editor / OS
 .vscode/
 .idea/

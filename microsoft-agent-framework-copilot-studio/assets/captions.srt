@@ -1,0 +1,119 @@
+1
+00:00:00,300 --> 00:00:03,200
+What if your Copilot Studio agent
+
+2
+00:00:03,200 --> 00:00:06,000
+could be called from any app you build?
+
+3
+00:00:06,000 --> 00:00:07,600
+Watch this.
+
+4
+00:00:07,600 --> 00:00:10,600
+You build a great agent in Copilot Studio.
+
+5
+00:00:10,600 --> 00:00:13,000
+But it's stuck in a chat box.
+
+6
+00:00:13,000 --> 00:00:16,000
+To use it in your product, you need code —
+
+7
+00:00:16,000 --> 00:00:18,200
+and secure auth. Let's do both.
+
+8
+00:00:18,200 --> 00:00:21,000
+This is the whole integration.
+
+9
+00:00:21,000 --> 00:00:24,500
+Create the agent. Call run. Get an answer.
+
+10
+00:00:24,500 --> 00:00:28,500
+The Microsoft Agent Framework treats it
+
+11
+00:00:28,500 --> 00:00:32,000
+as a first-class agent.
+
+12
+00:00:32,000 --> 00:00:35,000
+Here it is running.
+
+13
+00:00:35,000 --> 00:00:39,000
+I ask a question — and that's a live call
+
+14
+00:00:39,000 --> 00:00:43,000
+to my published Copilot Studio agent,
+
+15
+00:00:43,000 --> 00:00:46,000
+over Microsoft's Direct-to-Engine API.
+
+16
+00:00:46,000 --> 00:00:48,000
+No mock. No fake data.
+
+17
+00:00:48,000 --> 00:00:51,000
+Now the part engineers love.
+
+18
+00:00:51,000 --> 00:00:55,000
+This panel shows the exact call path —
+
+19
+00:00:55,000 --> 00:00:59,000
+the Agent Framework method, and the real
+
+20
+00:00:59,000 --> 00:01:02,000
+HTTP request to Copilot Studio,
+
+21
+00:01:02,000 --> 00:01:04,500
+with the live endpoint and conversation ID.
+
+22
+00:01:04,500 --> 00:01:06,500
+Full transparency. No black box.
+
+23
+00:01:06,500 --> 00:01:09,000
+And it's secure by design.
+
+24
+00:01:09,000 --> 00:01:12,000
+Sign-in is Microsoft Entra ID.
+
+25
+00:01:12,000 --> 00:01:15,000
+The token is scoped to one permission.
+
+26
+00:01:15,000 --> 00:01:19,000
+Caller and agent must share the same tenant.
+
+27
+00:01:19,000 --> 00:01:21,500
+Enterprise-ready, out of the box.
+
+28
+00:01:21,500 --> 00:01:24,500
+From no-code agent to production integration —
+
+29
+00:01:24,500 --> 00:01:26,000
+in one afternoon.
+
+30
+00:01:26,000 --> 00:01:27,400
+Code's in the repo. Follow for more.

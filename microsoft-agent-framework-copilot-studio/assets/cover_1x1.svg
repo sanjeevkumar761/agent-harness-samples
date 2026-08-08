@@ -1,0 +1,67 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A0E1F"/><stop offset="0.55" stop-color="#111A3E"/><stop offset="1" stop-color="#1E1247"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4F8CFF"/><stop offset="1" stop-color="#8A5CF6"/>
+    </linearGradient>
+    <radialGradient id="gp" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#8A5CF6" stop-opacity="0.5"/><stop offset="1" stop-color="#8A5CF6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gb" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#4F8CFF" stop-opacity="0.55"/><stop offset="1" stop-color="#4F8CFF" stop-opacity="0"/></radialGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#000" flood-opacity="0.45"/></filter>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg)"/>
+  <circle cx="900" cy="150" r="420" fill="url(#gp)"/>
+  <circle cx="160" cy="960" r="420" fill="url(#gb)"/>
+
+  <!-- Kicker -->
+  <rect x="80" y="110" width="68" height="7" rx="3.5" fill="url(#accent)"/>
+  <text x="80" y="166" fill="#9FB6E6" font-size="26" font-weight="600" letter-spacing="3">MICROSOFT AGENT FRAMEWORK</text>
+
+  <!-- Headline -->
+  <text x="78" y="270" fill="#FFF" font-size="88" font-weight="800" letter-spacing="-1.5">Call Copilot Studio</text>
+  <text x="78" y="366" fill="#FFF" font-size="88" font-weight="800" letter-spacing="-1.5">agents <tspan fill="#6FA0FF">from code</tspan>.</text>
+
+  <!-- Subhead -->
+  <text x="80" y="430" fill="#B9C6E6" font-size="32" font-weight="500">Live demo &#183; Entra ID auth &#183; 3 lines of code</text>
+
+  <!-- Badges -->
+  <g filter="url(#soft)">
+    <rect x="80" y="474" width="160" height="56" rx="28" fill="#0E1A34" stroke="#2C3E6B" stroke-width="1.5"/>
+    <circle cx="114" cy="502" r="8" fill="#34D399"/>
+    <text x="134" y="511" fill="#DCE6FA" font-size="24" font-weight="600">Live</text>
+    <rect x="258" y="474" width="214" height="56" rx="28" fill="#0E1A34" stroke="#2C3E6B" stroke-width="1.5"/>
+    <text x="282" y="511" fill="#DCE6FA" font-size="24" font-weight="600">&#128274; Entra ID</text>
+    <rect x="490" y="474" width="312" height="56" rx="28" fill="#0E1A34" stroke="#2C3E6B" stroke-width="1.5"/>
+    <text x="514" y="511" fill="#DCE6FA" font-size="24" font-weight="600">&#9889; Direct-to-Engine</text>
+  </g>
+
+  <!-- Code chip -->
+  <g filter="url(#soft)">
+    <rect x="80" y="576" width="560" height="180" rx="18" fill="#0B1226" stroke="#263461" stroke-width="1.5"/>
+    <circle cx="112" cy="612" r="7" fill="#FF5F57"/><circle cx="134" cy="612" r="7" fill="#FEBC2E"/><circle cx="156" cy="612" r="7" fill="#28C840"/>
+    <text x="110" y="672" font-family="Consolas,monospace" font-size="26" fill="#8AB4FF">agent <tspan fill="#C9D4EE">=</tspan> CopilotStudioAgent()</text>
+    <text x="110" y="714" font-family="Consolas,monospace" font-size="26" fill="#C9D4EE">reply = <tspan fill="#8A5CF6">await</tspan> agent.run()</text>
+  </g>
+
+  <!-- Chat card -->
+  <g filter="url(#soft)">
+    <rect x="672" y="576" width="328" height="180" rx="20" fill="#0E1630" stroke="#2C3E6B" stroke-width="1.5"/>
+    <rect x="700" y="606" width="272" height="48" rx="16" fill="url(#accent)"/>
+    <text x="836" y="638" fill="#FFF" font-size="22" font-weight="600" text-anchor="middle">Ask anything</text>
+    <text x="700" y="700" fill="#FFF" font-size="30" font-weight="700">Answer <tspan fill="#34D399">&#10003;</tspan></text>
+    <text x="700" y="730" fill="#9FB6E6" font-size="18">via Direct-to-Engine</text>
+  </g>
+
+  <!-- Play pill -->
+  <g filter="url(#soft)">
+    <rect x="80" y="812" width="520" height="82" rx="41" fill="#FFF"/>
+    <circle cx="130" cy="853" r="23" fill="#5B47F0"/>
+    <path d="M122 841 L122 865 L143 853 Z" fill="#FFF"/>
+    <text x="170" y="863" fill="#111A3E" font-size="30" font-weight="700">Watch the live demo</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="80" y="1000" fill="#7C8CB5" font-size="24" font-weight="500">github.com/sanjeevkumar761/agent-harness-samples</text>
+</svg>
